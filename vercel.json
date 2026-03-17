@@ -1,0 +1,16 @@
+{
+  "buildCommand": "pnpm install && pnpm --filter @workspace/telegram-gallery run build",
+  "outputDirectory": "artifacts/telegram-gallery/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://YOUR_RENDER_SERVICE_URL/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

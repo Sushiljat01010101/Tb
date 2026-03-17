@@ -1,0 +1,15 @@
+packages:
+  "framer-motion": "For sleek staggered grid animations and lightbox transitions"
+  "date-fns": "For formatting media timestamps into human-readable strings"
+  "clsx": "Utility for constructing className strings"
+  "tailwind-merge": "Utility for merging tailwind classes without conflicts"
+  "lucide-react": "For UI icons like Play, Download, Image, etc."
+
+images:
+  - path: "artifacts/telegram-gallery/public/images/empty-bg.png"
+    description: "Dark minimalist abstract background with subtle deep blue and purple glowing light leaks, highly polished, 8k resolution, smooth gradients, dark mode professional aesthetic"
+    aspect_ratio: "16:9"
+
+notes:
+  - "The frontend relies on the @workspace/api-client-react generated hooks to fetch media."
+  - "Polling is implemented via React Query's refetchInterval to refresh every 10 seconds."
